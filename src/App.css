@@ -2,3 +2,21 @@
   font-size: x-large;
   margin-left: 20px;
 }
+/*ส่วนนี้ให้ai ช่วยทำให้ */
+.inputBox { width: 400px; /* ขนาดความกว้าง */ 
+  height: 40px; /* ขนาดความสูง */ 
+  padding: 10px; /* ช่องว่างภายใน */ 
+  border: 2px solid #ccc; /* สีเส้นขอบ */ 
+  border-radius: 8px; /* มุมโค้งมน */ 
+  font-size: 16px; /* ขนาดตัวอักษร */ 
+  transition: all 0.3s ease; /* เอฟเฟกต์การเปลี่ยน */ 
+} /* เอฟเฟกต์เมื่อชี้ */ 
+.inputBox:hover { 
+  border-color: #888; /* สีเส้นขอบเมื่อชี้ */ 
+  background-color: #f0f0f0; /* สีพื้นหลังเมื่อชี้ */ 
+} /* เอฟเฟกต์เมื่อคลิก */ 
+.inputBox:focus { 
+  border-color: #333; /* สีเส้นขอบเมื่อคลิก */ 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* เงาเมื่อคลิก */ 
+  outline: none; /* เอาเส้นขอบของเบราว์เซอร์ออก */
+}
