@@ -13,12 +13,14 @@ function SearchBook() {
     }, [bookName]);
 
     async function handleChange(bookName) {
-    //  const testBook = ["a", "b", "c", "d" ];
-        const findBook = "https://www.googleapis.com/books/v1/volumes?q="+bookName;
-        const result = await axios.get(findBook);
-        console.log(result);
-        setBookList(result.data.items);
-    //  setBookList(testBook);
+        try {
+            const findBook = "https://www.googleapis.com/books/v1/volumes?q="+bookName;
+            const result = await axios.get(findBook);
+            console.log(result);
+            setBookList(result.data.items);
+        } catch (error) {
+            console.log("Error fecthing  data",error);
+        }
     }
 
 return (
